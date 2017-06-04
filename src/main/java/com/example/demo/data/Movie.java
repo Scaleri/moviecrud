@@ -1,7 +1,14 @@
 package com.example.demo.data;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
 public class Movie {
 	
+	@Id
+	@GeneratedValue
 	private Long id;
 	private String movieName;
 	private String movieDescription;
